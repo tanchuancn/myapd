@@ -73,7 +73,7 @@ void * sub_task(void * fd)
 	int size,i ;
 	char *bridge[3] = {"bridge0","bridge1","bridge2"};
 	twpa_init_params Msg;
-	
+	memset(Msg.bridge_elements_lenth,-1,MAX_STRUCT_MEMBER_SIZE);
 	Msg.ssid_len = 4;
 	size = Msg.num_bridge = 3;
 /*	printf("Msg.num_bridge is %d, jin ru sub task\n",Msg.num_bridge);*/

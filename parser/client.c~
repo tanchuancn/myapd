@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 	
 	Msg.bridge = (char**)malloc(sizeofbridge*sizeof(char*));
 	int *elements_len = (int*)malloc(sizeofbridge*sizeof(int));
-	memcpy(elements_len,temp->bridge_elements_lenth,sizeofbridge*sizeof(int));
+	memcpy(elements_len,temp->bridge_elements_lenth,sizeofbridge*sizeof(temp->bridge_elements_lenth[0]));
 	int i = 0;
 	for(;i<sizeofbridge;i++){
 		printf("elements_len[%d] is %d \t",i,elements_len[i]);

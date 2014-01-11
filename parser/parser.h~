@@ -53,7 +53,6 @@ typedef struct wpa_init_params_pdu{
 /*	u8 own_addr[MAX_BUF_SIZE];*/
 /*	const char test_socket[MAX_STRUCT_MEMBER_SIZE];
 	int use_pae_group_addr;*/
-	int bridge_elements_lenth[MAX_STRUCT_MEMBER_SIZE];
 	const char ifname[MAX_STRUCT_MEMBER_SIZE];
 	unsigned int ssid_len;
 	char buf[MAX_BUF_SIZE];
